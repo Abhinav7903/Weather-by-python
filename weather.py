@@ -1,7 +1,7 @@
 import requests
 from pprint import pprint
 def weather_data(query):
-	res=requests.get('http://api.openweathermap.org/data/2.5/weather?'+query+'&APPID=db3e8e5feb7d1f259f8629233d8bd9e3&units=metric');
+	res=requests.get('http://api.openweathermap.org/data/2.5/weather?'+query+'&APPID=f2f6f0f4e1d43a7af332ee5ee0090cb0&units=metric');
 	return res.json();
 def print_weather(result,city):
 	print("{}'s temperature: {}°C ".format(city,result['main']['temp']))
